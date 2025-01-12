@@ -1,0 +1,19 @@
+1. CREATE (POST)
+
+curl -X POST http://localhost:8000/api/actions/ \
+-H "Content-Type: application/json" \
+-d '{"action":"Recycling","date":"2025-01-08","points":25}'
+
+2. UPDATE (PUT)
+
+curl -X PUT http://localhost:8000/api/actions/1/ \
+-H "Content-Type: application/json" \
+-d '{"action":"Recycling Paper","date":"2025-01-08","points":30}'
+
+3. DELETE
+
+curl -X DELETE http://localhost:8000/api/actions/1/
+
+4. GET
+
+curl http://localhost:8000/api/actions/
